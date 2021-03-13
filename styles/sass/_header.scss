@@ -1,0 +1,27 @@
+h1 {
+    @include largeHeader;
+}
+
+header a {
+    @include smallHeader;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    padding: 15px;
+}
+header a {
+    text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+    text-decoration: line-through;
+}
+
+header .container {
+    padding-top: 50px;
+}

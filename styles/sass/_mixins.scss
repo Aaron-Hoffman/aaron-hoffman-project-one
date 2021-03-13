@@ -1,0 +1,45 @@
+@mixin  largeHeader{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.85rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin smallHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin buttonText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+@mixin navText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    color: $whiteTwo;
+}
+
+@mixin pText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: $black;
+}
