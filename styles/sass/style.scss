@@ -131,6 +131,7 @@ header {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
+    margin-bottom: 150px;
 }
 
 .gridItem1 {
@@ -156,7 +157,7 @@ header {
     background-color: $lightSage;
 }
 
-.contact .textContainer,
+.contact .container,
 .contact .imgContainer {
     width: 50%;
 }
@@ -170,7 +171,6 @@ header {
     width: 60%;
     display: flex;
     flex-direction: column;
-    padding: 300px 0;
 }
 
 .contact h2 {

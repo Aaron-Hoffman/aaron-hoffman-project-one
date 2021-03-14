@@ -32,3 +32,22 @@ footer .textContainer h3 {
 .posts {
     list-style-type: disc;
 }
+
+footer form {
+    display: flex;
+}
+.button {
+    height: 31px;
+    width: 31px;
+    background-color: $lightSage;
+}
+button {
+    background: none;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+
+footer .social li {
+    margin-right: 20px;
+}

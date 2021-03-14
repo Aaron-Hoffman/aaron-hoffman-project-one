@@ -401,6 +401,29 @@ footer .textContainer h3 {
   list-style-type: disc;
 }
 
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  height: 31px;
+  width: 31px;
+  background-color: #C3DAB7;
+}
+
+button {
+  background: none;
+  border: none;
+  position: relative;
+  top: 5px;
+}
+
+footer .social li {
+  margin-right: 20px;
+}
+
 header {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
@@ -547,6 +570,7 @@ header {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 25px;
+  margin-bottom: 150px;
 }
 
 .gridItem1 {
@@ -575,7 +599,7 @@ header {
   background-color: #C3DAB7;
 }
 
-.contact .textContainer,
+.contact .container,
 .contact .imgContainer {
   width: 50%;
 }
@@ -598,7 +622,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 300px 0;
 }
 
 .contact h2 {

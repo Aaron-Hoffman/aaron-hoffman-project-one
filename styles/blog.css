@@ -400,3 +400,26 @@ footer .textContainer h3 {
 .posts {
   list-style-type: disc;
 }
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  height: 31px;
+  width: 31px;
+  background-color: #C3DAB7;
+}
+
+button {
+  background: none;
+  border: none;
+  position: relative;
+  top: 5px;
+}
+
+footer .social li {
+  margin-right: 20px;
+}
