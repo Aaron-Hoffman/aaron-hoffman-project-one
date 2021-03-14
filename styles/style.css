@@ -293,7 +293,8 @@ p {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #333;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
 }
 
 h1 {
@@ -352,7 +353,8 @@ header .container {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #333;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
   line-height: normal;
   position: relative;
   left: 10px;
@@ -362,7 +364,7 @@ header .container {
 footer {
   padding-top: 100px;
   background-color: #333;
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer p {
@@ -370,7 +372,7 @@ footer p {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer .wrapper {
@@ -391,7 +393,7 @@ footer .social {
 
 footer a,
 footer h3 {
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer .textContainer h3 {
@@ -420,9 +422,10 @@ footer form {
   margin-top: 30px;
 }
 
-footer input {
+footer input[type="email"] {
   height: 40px;
   padding-left: 10px;
+  margin: 0;
 }
 
 footer input::-webkit-input-placeholder {
@@ -430,7 +433,7 @@ footer input::-webkit-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -439,7 +442,7 @@ footer input:-ms-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -448,7 +451,7 @@ footer input::-ms-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -457,17 +460,17 @@ footer input::placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
-.button {
+footer .button {
   height: 40px;
   width: 40px;
   background-color: #C3DAB7;
 }
 
-button {
+footer button {
   background: none;
   border: none;
   position: relative;
@@ -741,6 +744,10 @@ footer .textContainer:nth-of-type(3) {
   height: 100vh;
 }
 
+article {
+  padding: 100px 0;
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.85rem;
@@ -748,14 +755,261 @@ h2 {
   letter-spacing: 0.9px;
   color: #333;
   text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
 }
 
-h5 {
+article h5 {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.7rem;
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+  padding: 20px 0 75px 0;
+}
+
+article h5 span,
+p.dark {
+  color: #333;
+}
+
+article img {
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.container.blogInfo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  margin-bottom: 50px;
+}
+
+article .container .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container.right .textContainer {
+  margin-left: 60px;
+}
+
+article p {
+  margin-bottom: 30px;
+}
+
+div.share {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+article nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article nav li {
+  padding: 0 10px;
+}
+
+article nav a {
+  color: #333;
+}
+
+section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.85rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.relatedPosts p {
+  text-transform: uppercase;
+  padding: 20px 0 100px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.comments {
+  margin-bottom: 100px;
+}
+
+.comments .textContainer {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  padding: 20px;
+  background: #F6F6F6;
+  margin-bottom: 25px;
+}
+
+.comments span {
+  text-transform: none;
+  color: rgba(51, 51, 51, 0.6);
+  font-style: oblique;
+}
+
+.comments .textContainer p:first-of-type {
+  padding: 10px 0;
+}
+
+p.date {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.5;
+  font-size: 0.7rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 175px;
+}
+
+input {
+  -ms-flex-preferred-size: calc(100% / 3 - 45px);
+      flex-basis: calc(100% / 3 - 45px);
+}
+
+input[type="email"] {
+  margin: 0 45px;
+}
+
+section textarea {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 150px;
+  resize: none;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+  color: #333;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
+}
+
+section button[type="submit"] {
+  margin-top: 60px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  color: #333;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  padding-bottom: 10px;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+section button:hover,
+section button:focus {
+  border-bottom: 1px solid #333;
+  color: #333;
+}
+
+input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+input:hover:-ms-input-placeholder,
+input:focus:-ms-input-placeholder,
+textarea:hover:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+input:hover::-ms-input-placeholder,
+input:focus::-ms-input-placeholder,
+textarea:hover::-ms-input-placeholder,
+textarea:focus::-ms-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+input:hover::placeholder,
+input:focus::placeholder,
+textarea:hover::placeholder,
+textarea:focus::placeholder {
+  opacity: 1;
   color: #333;
 }
 
@@ -1054,7 +1308,8 @@ p {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #333;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
 }
 
 h1 {
@@ -1113,7 +1368,8 @@ header .container {
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #333;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
   line-height: normal;
   position: relative;
   left: 10px;
@@ -1123,7 +1379,7 @@ header .container {
 footer {
   padding-top: 100px;
   background-color: #333;
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer p {
@@ -1131,7 +1387,7 @@ footer p {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer .wrapper {
@@ -1152,7 +1408,7 @@ footer .social {
 
 footer a,
 footer h3 {
-  color: #F6F6F6;
+  color: #FFF;
 }
 
 footer .textContainer h3 {
@@ -1181,9 +1437,10 @@ footer form {
   margin-top: 30px;
 }
 
-footer input {
+footer input[type="email"] {
   height: 40px;
   padding-left: 10px;
+  margin: 0;
 }
 
 footer input::-webkit-input-placeholder {
@@ -1191,7 +1448,7 @@ footer input::-webkit-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -1200,7 +1457,7 @@ footer input:-ms-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -1209,7 +1466,7 @@ footer input::-ms-input-placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
@@ -1218,17 +1475,17 @@ footer input::placeholder {
   font-size: 0.7rem;
   font-weight: normal;
   letter-spacing: 0.3px;
-  color: #F6F6F6;
+  color: #FFF;
   color: #333;
 }
 
-.button {
+footer .button {
   height: 40px;
   width: 40px;
   background-color: #C3DAB7;
 }
 
-button {
+footer button {
   background: none;
   border: none;
   position: relative;

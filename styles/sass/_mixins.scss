@@ -32,7 +32,7 @@
     font-size: 0.7rem;
     font-weight: normal;
     letter-spacing: 0.3px;
-    color: $whiteTwo;
+    color: $white;
 }
 
 @mixin pText {
@@ -41,5 +41,6 @@
     font-weight: normal;
     line-height: 24px;
     letter-spacing: 0.3px;
-    color: $black;
+    color: $lightBlack;
+    opacity: 0.7;
 }

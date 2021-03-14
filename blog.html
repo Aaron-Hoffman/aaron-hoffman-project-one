@@ -41,8 +41,8 @@
     <article>
         <div class="wrapper">
             <h2>How to Run a Creative Agency</h2>
-            <h5>Home/Blog/How to Run a Creative Agency</h5>
-            <div class="container">
+            <h5>Home/Blog/<span>How to Run a Creative Agency</span></h5>
+            <div class="container blogInfo">
                 <div class="container">
                     <div class="imgContainer">
                         <img src="./assets/blog-2.jpeg" alt="Blogger headshot">
@@ -52,25 +52,28 @@
                         <p>Administrator</p>
                     </div>
                 </div>
-                <div class="textContainer">
-                    <h4>Date</h4>
-                    <p>July 31, 2018</p>
-                </div>
-                <div class="textContainer">
-                    <h4>Category</h4>
-                    <p>Entertainment, Business</p>
-                </div>
-                <div class="textContainer">
-                    <h4>Tags</h4>
-                    <p>Design, Web, Lifestyle, Site</p>
+                <div class="container right">
+                    <div class="textContainer">
+                        <h4>Date</h4>
+                        <p>July 31, 2018</p>
+                    </div>
+                    <div class="textContainer">
+                        <h4>Category</h4>
+                        <p>Entertainment, Business</p>
+                    </div>
+                    <div class="textContainer">
+                        <h4>Tags</h4>
+                        <p>Design, Web, Lifestyle, Site</p>
+                    </div>
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fugiat beatae excepturi, exercitationem dolores totam!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sint vero assumenda, quas culpa obcaecati!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, repudiandae. Dolorum adipisci fugit recusandae? Error commodi nostrum dolorem exercitationem dolores laudantium corrupti magnam, tenetur possimus. Impedit reiciendis quibusdam atque iste.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit nostrum placeat exercitationem nam asperiores quam voluptas, aliquid pariatur laborum voluptatem officiis commodi culpa atque dolores, aut maiores dolorum modi itaque.</p>
-            <div class="container">
-                <h4>Share</h4>
+            <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fugiat beatae excepturi, exercitationem dolores totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, provident.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sint vero assumenda, quas culpa obcaecati! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit quaerat maxime, dolor veniam nemo expedita aliquam eius asperiores placeat?
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, repudiandae. Dolorum adipisci fugit recusandae? Error commodi nostrum dolorem exercitationem dolores laudantium corrupti magnam, tenetur possimus. Impedit reiciendis quibusdam atque iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia! Quaerat, sed! Minima placeat aliquid delectus corporis, repellendus perspiciatis eos harum soluta necessitatibus optio unde excepturi at sit nobis cupiditate molestias, eligendi dolore obcaecati tempore. Blanditiis, amet facilis iure consectetur quod quia, quis unde delectus illum numquam dolorem saepe nostrum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit nostrum placeat exercitationem nam asperiores quam voluptas, aliquid pariatur laborum voluptatem officiis commodi culpa atque dolores, aut maiores dolorum modi itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos necessitatibus quos vel dolorum incidunt, expedita eius minus vitae sint deserunt repellat provident molestias et impedit excepturi temporibus ipsum asperiores praesentium. Illum maxime consequuntur mollitia rem ea vel ex tempora.</p>
+            <div class="container share">
+                <h4>Share:</h4>
                 <nav>
                     <ul>
                         <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -89,7 +92,7 @@
             <div class="container">
                 <div class="post">
                     <div class="imgContainer">
-                        <a href="#"></a>
+                        <a href="#">
                             <img src="./assets/blog-3.jpeg" alt="A white desk with plants, a lamp and a macbook in front of a window.">
                         </a>
                     </div>
@@ -116,7 +119,7 @@
     </section>
     <!-- Related Posts Sections Ends -->
     <!-- Comments section Starts -->
-    <section>
+    <section class="comments">
         <div class="wrapper">
             <h3>02 Comments</h3>
             <div class="container">
@@ -124,8 +127,8 @@
                     <img src="./assets/blog-6.jpeg" alt="Headshot of the commenter">
                 </div>
                 <div class="textContainer">
-                    <h4>Daniel Vandaft - <span>Reply</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga.</p>
+                    <h4>Daniel Vandaft <span>- Reply</span></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                     <p class="date">Jul 17,2015 at 15 hours ago</p>
                 </div>
             </div>
@@ -134,8 +137,8 @@
                     <img src="./assets/blog-7.jpeg" alt="Headshot of the commenter">
                 </div>
                 <div class="textContainer">
-                    <h4>Jenifer Loops - <span>Reply</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, vitae.</p>
+                    <h4>Jenifer Loops <span>- Reply</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, voluptates.</p>
                     <p class="date">Jul 17,2015 at 15 hours ago</p>
                 </div>
             </div>
@@ -146,14 +149,14 @@
     <section>
         <div class="wrapper">
             <h3>Leave a Comment</h3>
-            <form action="POST">
-                <label for="name">Enter your name</label>
+            <form action="POST" >
+                <label for="name" class="sr-only">Enter your name</label>
                 <input type="text" id="name" placeholder="Enter your name..." required>
-                <label for="email">Enter your email</label>
+                <label for="email" class="sr-only">Enter your email</label>
                 <input type="email" id="email" placeholder="youremail@domain.com" required>
-                <label for="subject">Subject</label>
+                <label for="subject" class="sr-only">Subject</label>
                 <input type="text" id="subject" placeholder="Subject (Optional)">
-                <label for="comment">Comment goes here</label>
+                <label for="comment" class="sr-only">Comment goes here</label>
                 <textarea name="comment" id="comment" placeholder="Here goes your comment"></textarea>
                 <button type="submit">Submit Comment</button>
             </form>

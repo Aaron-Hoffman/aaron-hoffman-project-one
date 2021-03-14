@@ -1,7 +1,7 @@
 footer {
     padding-top: 100px;
     background-color: $black;
-    color: $whiteTwo;
+    color: $white;
 }
 
 footer p {
@@ -19,7 +19,7 @@ footer .social {
 
 footer a,
 footer h3 {
-    color: $whiteTwo;
+    color: $white;
 }
 
 footer .textContainer h3 {
@@ -46,21 +46,22 @@ footer form {
     margin-top: 30px;
 }
 
-footer input {
+footer input[type="email"] {
     height: 40px;
     padding-left: 10px;
+    margin: 0;
 }
 
 footer input::placeholder {
     @include navText;
     color: $black;
 }
-.button {
+footer .button {
     height: 40px;
     width: 40px;
     background-color: $lightSage;
 }
-button {
+footer button {
     background: none;
     border: none;
     position: relative;
@@ -82,3 +83,6 @@ footer .textContainer:nth-of-type(3) {
     align-items: flex-end;
     text-align: right;
 }
+
+//  Form styles
+
