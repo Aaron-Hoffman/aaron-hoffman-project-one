@@ -1,0 +1,16 @@
+//  Header styles background
+
+.blogHeader {
+    background: url(../assets/blog-1.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h2 {
+    @include largeHeader;
+}
+
+h5 {
+    @include pText;
+}
+

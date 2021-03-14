@@ -360,7 +360,7 @@ header .container {
 }
 
 footer {
-  padding-top: 70px;
+  padding-top: 100px;
   background-color: #333;
   color: #F6F6F6;
 }
@@ -373,7 +373,15 @@ footer p {
   color: #F6F6F6;
 }
 
-footer .wrapper,
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,15 +409,61 @@ footer .textContainer h3 {
   list-style-type: disc;
 }
 
+.posts li {
+  margin-bottom: 5px;
+}
+
 footer form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30px;
+}
+
+footer input {
+  height: 40px;
+  padding-left: 10px;
+}
+
+footer input::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+  color: #333;
+}
+
+footer input:-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+  color: #333;
+}
+
+footer input::-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+  color: #333;
+}
+
+footer input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  color: #F6F6F6;
+  color: #333;
 }
 
 .button {
-  height: 31px;
-  width: 31px;
+  height: 40px;
+  width: 40px;
   background-color: #C3DAB7;
 }
 
@@ -417,9 +471,28 @@ button {
   background: none;
   border: none;
   position: relative;
-  top: 5px;
+  top: 10px;
+  right: 4px;
 }
 
 footer .social li {
   margin-right: 20px;
+}
+
+footer .textContainer:nth-of-type(2) h3 {
+  text-align: center;
+}
+
+footer .textContainer:nth-of-type(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
 }

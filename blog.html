@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/2a6e485077.js" crossorigin="anonymous"></script>
     <title>Creative</title>
 </head>
 <body>
     <!-- Header Starts -->
-    <header>
+    <header class="blogHeader">
         <div class="wrapper">
             <div class="container">
                 <nav class="left">
@@ -36,6 +36,7 @@
     </header>
     <!-- Header Ends -->
     <!-- Main Starts -->
+    <main>
     <!-- Featured Blog Post Starts -->
     <article>
         <div class="wrapper">
@@ -83,7 +84,7 @@
     <!-- Featured Blog Post Ends -->
     <!-- Related posts section starts -->
     <section class="relatedPosts">
-        <div class="wrapper"></div>
+        <div class="wrapper">
             <h3>Related Posts</h3>
             <div class="container">
                 <div class="post">
@@ -159,13 +160,14 @@
         </div>
     </section>
     <!-- Leave a comment sections ends -->
-
+</main>
+<!-- Main ends -->
     <!-- Footer starts -->
-     <footer>
+    <footer>
         <div class="wrapper">
             <div class="textContainer">
                 <h3>Contact Us</h3>
-                <ul class="contact">
+                <ul>
                     <li>
                         <p>6591 Orchard Street NY 10002, United States</p>
                     </li>
@@ -220,16 +222,16 @@
                 <h3>Twitter Widget</h3>
                 <p>Signup for emails and notifications below</p>
                 <form action="POST">
-                    <label   label for="email">Enter your email</label>
+                    <label   label for="email" class="sr-only">Enter your email</label>
                     <input type="email" id="email" placeholder="Enter your email">
-                    <button type="submit"></button>
+                    <div class="button">
+                        <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
                 </form>
             </div>
         </div> <!-- Wrapper -->
-
+        <h3 class="footer">Creative Agency</h3>
     </footer>
     <!-- Footer ends -->
-    <h3>Creative Agency</h3>
-</main>
 </body>
 </html>
