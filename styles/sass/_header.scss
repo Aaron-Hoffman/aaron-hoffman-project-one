@@ -25,3 +25,19 @@ header a:focus {
 header .container {
     padding-top: 50px;
 }
+
+.fa-shopping-bag::after {
+    content: '2';  
+    border-radius: 50%;
+    background: $lightSage;
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    display: block;
+    text-align: center;
+    @include pText;
+    line-height: normal;
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
