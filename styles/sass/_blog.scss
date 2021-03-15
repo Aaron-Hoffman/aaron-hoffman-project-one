@@ -138,8 +138,6 @@ textarea{
     padding: 10px;
     border: none;
     border-bottom: $border;
-    @include pText;
-    color: $black;
 }
 
 input::placeholder,
