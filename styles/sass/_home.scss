@@ -22,7 +22,7 @@
     position: relative;
     margin: 0 auto;
     padding-top: 200px;
-    width: 450px;
+    width: 60%;
 }
 
 .branding .container {
@@ -77,14 +77,16 @@
     background-size: cover;
 }
 
+.features .ulContainer {
+    width: 60%;
+    margin: 0 0 0 auto;
+}
+
 .features ul {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
     padding: 150px 0;
-    margin: 0 0 0 auto;
-    position: relative;
-    left: 150px;
+    transform: translateX(150px);
 }
 
 .features li {
@@ -93,12 +95,17 @@
     align-items: center;
 }
 
-.features i {
+div.circle {
     border: 1px solid $black;
     border-radius: 50%;
-    padding: 15px;
-    margin-right: 20px;
+    width: 52px;
+    height: 52px;
     align-self: start;
+    margin-right: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .features h3 {

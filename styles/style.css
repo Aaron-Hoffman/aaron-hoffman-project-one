@@ -520,7 +520,7 @@ footer .textContainer:nth-of-type(3) {
   position: relative;
   margin: 0 auto;
   padding-top: 200px;
-  width: 450px;
+  width: 60%;
 }
 
 .branding .container {
@@ -584,17 +584,20 @@ footer .textContainer:nth-of-type(3) {
   background-size: cover;
 }
 
+.features .ulContainer {
+  width: 60%;
+  margin: 0 0 0 auto;
+}
+
 .features ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
   padding: 150px 0;
-  margin: 0 0 0 auto;
-  position: relative;
-  left: 150px;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
 }
 
 .features li {
@@ -605,14 +608,25 @@ footer .textContainer:nth-of-type(3) {
           align-items: center;
 }
 
-.features i {
+div.circle {
   border: 1px solid #333;
   border-radius: 50%;
-  padding: 15px;
-  margin-right: 20px;
+  width: 52px;
+  height: 52px;
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
       align-self: start;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .features h3 {
@@ -1065,4 +1079,24 @@ header .container {
 
 .contactForm p {
   margin-bottom: 100px;
+}
+
+@media (max-width: 940px) {
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container nav,
+  header .container h1 {
+    width: 40%;
+  }
+  section.features {
+    background-position: 35%;
+  }
+  section.features ul {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }

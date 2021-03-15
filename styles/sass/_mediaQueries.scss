@@ -1,0 +1,19 @@
+@media(max-width: 940px) {
+    header .container {
+        flex-direction: column;
+        nav,
+        h1 {
+            width: 40%;
+        }
+    } 
+    section.features {
+        background-position: 35%;
+        ul {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media(max-width: 768) {
+    
+}
