@@ -75,18 +75,15 @@
 .features {
     background-image: url(../assets/home-4.jpeg);
     background-size: cover;
-}
-
-.features .ulContainer {
-    width: 60%;
-    margin: 0 0 0 auto;
+    background-position: bottom;
 }
 
 .features ul {
     display: flex;
     flex-wrap: wrap;
     padding: 150px 0;
-    transform: translateX(150px);
+    width: 50%;
+    margin: 0 0 0 auto;
 }
 
 .features li {
