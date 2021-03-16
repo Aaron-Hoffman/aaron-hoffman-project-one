@@ -1098,6 +1098,9 @@ header .container {
   .features ul {
     width: 60%;
   }
+  .gridItem1 {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -1113,6 +1116,9 @@ header .container {
   }
   .features ul {
     width: 70%;
+  }
+  .gridItem1 {
+    padding-top: 25px;
   }
   form input:nth-of-type(2) {
     margin-right: 0;
@@ -1146,14 +1152,44 @@ header .container {
 }
 
 @media (max-width: 840px) {
+  .grid {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gridItem1 {
+    -ms-grid-column: span 3;
+        grid-column-start: span 3;
+  }
   .contactDetails ul li:nth-of-type(2) {
     padding: 0 10px;
   }
 }
 
 @media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
   .branding .words {
     width: 180px;
+  }
+  .carousel .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fa-chevron-left,
+  .fa-chevron-right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 30px;
+  }
+  .carousel .container {
+    padding: 0;
   }
   .features ul {
     width: 80%;
@@ -1249,6 +1285,16 @@ header .container {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .grid {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .gridItem1 {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
   form input:nth-of-type(2) {
     margin-left: 0;
   }
@@ -1269,6 +1315,9 @@ header .container {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .branding .container .textContainer {
+    width: 100%;
+  }
   .branding .container .textContainer:first-of-type {
     padding-bottom: 0;
   }
@@ -1285,6 +1334,10 @@ header .container {
     width: 100%;
     margin-bottom: 40px;
     padding-bottom: 0;
+  }
+  .grid {
+    -ms-grid-rows: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
   }
   article h2 {
     font-size: 2rem;
