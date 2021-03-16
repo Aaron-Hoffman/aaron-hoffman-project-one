@@ -35,6 +35,9 @@ header .container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
+    li {
+        flex-shrink: 1;
+    }
     li > * {
         margin-bottom: 7px;
     }

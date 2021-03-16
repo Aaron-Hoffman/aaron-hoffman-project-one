@@ -1071,6 +1071,11 @@ header .container {
   margin-bottom: 100px;
 }
 
+.contactDetails ul li {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
 .contactDetails ul li > * {
   margin-bottom: 7px;
 }
@@ -1115,6 +1120,9 @@ header .container {
     margin-right: 0;
     margin-left: 60px;
   }
+  .contactDetails ul li:nth-of-type(2) {
+    padding: 0 30px;
+  }
   footer .wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1133,6 +1141,12 @@ header .container {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .contactDetails ul li:nth-of-type(2) {
+    padding: 0 10px;
   }
 }
 

@@ -25,6 +25,12 @@
         margin-left: 60px;
     }
 
+    //  Contact
+
+    .contactDetails ul li:nth-of-type(2) {
+        padding: 0 30px;
+    }
+
     // Footer 
 
     footer .wrapper {
@@ -38,6 +44,14 @@
             align-items: flex-start;
             margin-top: 40px;
         }
+    }
+}
+
+@media(max-width: 840px) {
+    //  Contact
+
+    .contactDetails ul li:nth-of-type(2) {
+        padding: 0 10px;
     }
 }
 
