@@ -10,6 +10,9 @@ footer p {
 footer .wrapper {
     display: flex;
     justify-content: space-between;
+    .textContainer {
+        flex: 1 1 30%;
+    }
 }
 
 footer .social {
@@ -49,6 +52,7 @@ footer form {
 footer input[type="email"] {
     height: 40px;
     padding-left: 10px;
+    width: 200px;
     margin: 0;
 }
 
@@ -73,8 +77,11 @@ footer .social li {
     margin-right: 20px;
 }
 
-footer .textContainer:nth-of-type(2) h3 {
-    text-align: center;
+footer .textContainer:nth-of-type(2) {
+    margin-left: 15px;
+    h3 {
+        text-align: center;
+    }
 }
 
 footer .textContainer:nth-of-type(3) {

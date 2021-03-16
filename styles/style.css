@@ -384,6 +384,12 @@ footer .wrapper {
           justify-content: space-between;
 }
 
+footer .wrapper .textContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
 footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +431,7 @@ footer form {
 footer input[type="email"] {
   height: 40px;
   padding-left: 10px;
+  width: 200px;
   margin: 0;
 }
 
@@ -480,6 +487,10 @@ footer button {
 
 footer .social li {
   margin-right: 20px;
+}
+
+footer .textContainer:nth-of-type(2) {
+  margin-left: 15px;
 }
 
 footer .textContainer:nth-of-type(2) h3 {
@@ -1098,5 +1109,78 @@ header .container {
   section.features ul {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  footer .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .wrapper .textContainer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+  footer .wrapper .textContainer:last-of-type {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branding .words {
+    width: 180px;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .container,
+  .contact .imgContainer {
+    width: 100%;
+  }
+  .contact .container {
+    padding: 100px 0;
+  }
+  footer .wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .wrapper .textContainer:nth-of-type(2) {
+    margin-top: 40px;
+  }
+  footer .wrapper .textContainer:nth-of-type(2) h3 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+  }
+  .branding .words {
+    width: 100px;
+    left: -45px;
+    bottom: 90px;
+  }
+  .branding .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .branding .container .textContainer:first-of-type {
+    padding-bottom: 0;
   }
 }
