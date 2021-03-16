@@ -78,15 +78,27 @@
 
 @media(max-width: 768px) {
     //  Header 
-
     header nav {
         display: none;
     }
+
+    i.fa-bars {
+        display: block;
+        font-size: 1.7rem;
+    }
+
+    header .container {
+        flex-direction: row;
+        padding-top: 100px;
+    }
+
 
     // Home
 
     .branding .words {
         width: 180px;
+        bottom: 150px;
+        left: -50px;
     }
 
     .carousel .wrapper {
@@ -215,11 +227,10 @@
     // Home 
 
     .branding .words {
-        width: 100px;
-        left: -45px;
-        bottom: 90px;
+        width: 150px;
+        bottom: 150px;
+        left: 0px;
     }
-    
     .branding .container {
         flex-direction: column;
         .textContainer {

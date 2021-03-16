@@ -306,6 +306,10 @@ h1 {
   text-transform: uppercase;
 }
 
+i.fa-bars {
+  display: none;
+}
+
 header a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
@@ -515,10 +519,24 @@ footer .textContainer:nth-of-type(3) {
   height: 100vh;
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
+  background-position: bottom;
 }
 
 .branding {
   background: #C3DAB7;
+}
+
+.branding .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .words {
@@ -529,9 +547,7 @@ footer .textContainer:nth-of-type(3) {
 
 .picture {
   position: relative;
-  margin: 0 auto;
   padding-top: 200px;
-  width: 60%;
 }
 
 .branding .container {
@@ -541,7 +557,7 @@ footer .textContainer:nth-of-type(3) {
 }
 
 .branding .textContainer {
-  width: 375px;
+  width: calc(50% - 40px);
   text-align: center;
   padding: 75px 20px 100px;
 }
@@ -1171,8 +1187,21 @@ header .container {
   header nav {
     display: none;
   }
+  i.fa-bars {
+    display: block;
+    font-size: 1.7rem;
+  }
+  header .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 100px;
+  }
   .branding .words {
     width: 180px;
+    bottom: 150px;
+    left: -50px;
   }
   .carousel .wrapper {
     -ms-flex-wrap: wrap;
@@ -1305,9 +1334,9 @@ header .container {
     width: 90%;
   }
   .branding .words {
-    width: 100px;
-    left: -45px;
-    bottom: 90px;
+    width: 150px;
+    bottom: 150px;
+    left: 0px;
   }
   .branding .container {
     -webkit-box-orient: vertical;

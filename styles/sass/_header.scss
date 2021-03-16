@@ -2,6 +2,10 @@ h1 {
     @include largeHeader;
 }
 
+i.fa-bars {
+    display: none;
+}
+
 header a {
     @include smallHeader;
 }
