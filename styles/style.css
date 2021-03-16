@@ -905,8 +905,9 @@ form {
 }
 
 input {
-  -ms-flex-preferred-size: calc(100% / 3 - 45px);
-      flex-basis: calc(100% / 3 - 45px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 3 - 45px);
+          flex: 1 1 calc(100% / 3 - 45px);
 }
 
 input[type="email"] {
@@ -1110,6 +1111,10 @@ header .container {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  form input:nth-of-type(2) {
+    margin-right: 0;
+    margin-left: 60px;
+  }
   footer .wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1148,6 +1153,35 @@ header .container {
   .contact .container {
     padding: 100px 0;
   }
+  article .blogInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  article .blogInfo .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  article .blogInfo .container .imgContainer {
+    margin-bottom: 30px;
+  }
+  article .blogInfo .right .textContainer:first-of-type {
+    margin-left: 0;
+  }
+  .relatedPosts .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .relatedPosts .container .post img {
+    width: 100%;
+  }
+  form input:nth-of-type(2) {
+    margin-left: 20px;
+  }
   footer .wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1162,6 +1196,12 @@ header .container {
   }
   footer .wrapper .textContainer:nth-of-type(2) h3 {
     text-align: left;
+  }
+}
+
+@media (max-width: 580px) {
+  form input:nth-of-type(2) {
+    margin-left: 0;
   }
 }
 
@@ -1182,5 +1222,20 @@ header .container {
   }
   .branding .container .textContainer:first-of-type {
     padding-bottom: 0;
+  }
+  article h2 {
+    font-size: 2rem;
+  }
+  article .blogInfo .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  article .blogInfo .right .textContainer {
+    margin-left: 0;
   }
 }

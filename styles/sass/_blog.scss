@@ -120,7 +120,7 @@ form {
 }
 
 input {
-    flex-basis: calc(100% / 3 - 45px);
+    flex: 1 1 calc(100% / 3 - 45px);
 }
 input[type="email"] {
     margin: 0 45px;

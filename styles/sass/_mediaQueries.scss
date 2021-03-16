@@ -1,4 +1,6 @@
 @media(max-width: 940px) {
+    //  Header 
+
     header .container {
         flex-direction: column;
         nav,
@@ -6,12 +8,24 @@
             width: 40%;
         }
     } 
+
+    // Home
+
     section.features {
         background-position: 35%;
         ul {
             transform: translateX(0);
         }
     }
+
+    //  Blog 
+
+    form input:nth-of-type(2) {
+        margin-right: 0;
+        margin-left: 60px;
+    }
+
+    // Footer 
 
     footer .wrapper {
         flex-wrap: wrap;
@@ -28,6 +42,8 @@
 }
 
 @media(max-width: 768px) {
+    // Home
+
     .branding .words {
         width: 180px;
     }
@@ -42,6 +58,34 @@
         }
     }
 
+    // Blog 
+
+    article .blogInfo {
+        flex-direction: column;
+        .container {
+            justify-content: start;
+            .imgContainer {
+                margin-bottom: 30px;
+            }
+        }
+        .right .textContainer:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    .relatedPosts .container {
+        flex-direction: column;
+        .post img{
+            width: 100%;
+        }
+    }
+
+    form input:nth-of-type(2) {
+        margin-left: 20px;
+    }
+
+    // Footer 
+
     footer .wrapper {
             align-items: flex-start;
             flex-direction: column;
@@ -55,10 +99,18 @@
 
 }
 
+@media(max-width: 580px) {
+    form input:nth-of-type(2) {
+        margin-left: 0;
+    }
+}
+
 @media(max-width: 480px) {
     .wrapper {
         width: 90%;
     }
+    // Home 
+
     .branding .words {
         width: 100px;
         left: -45px;
@@ -69,6 +121,19 @@
         flex-direction: column;
         .textContainer:first-of-type {
             padding-bottom: 0;
+        }
+    }
+
+    // Blog 
+
+    article h2 {
+        font-size: 2rem;
+    }
+    article .blogInfo .right {
+        flex-direction: column;
+        align-items: start;
+        .textContainer {
+            margin-left: 0;
         }
     }
 }
