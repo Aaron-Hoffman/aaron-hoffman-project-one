@@ -308,6 +308,7 @@ h1 {
 
 i.fa-bars {
   display: none;
+  cursor: pointer;
 }
 
 header a {
@@ -359,6 +360,8 @@ header .container {
   letter-spacing: 0.3px;
   color: rgba(51, 51, 51, 0.6);
   opacity: 0.7;
+  color: #333;
+  opacity: 1;
   line-height: normal;
   position: relative;
   left: 10px;
@@ -485,8 +488,10 @@ footer button {
   background: none;
   border: none;
   position: relative;
-  top: 10px;
-  right: 4px;
+  top: 1px;
+  right: 1px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 footer .social li {
@@ -520,6 +525,17 @@ footer .textContainer:nth-of-type(3) {
   background-image: url(../assets/home-1.jpeg);
   background-size: cover;
   background-position: bottom;
+  position: relative;
+}
+
+div.line {
+  width: 1px;
+  height: 120px;
+  background-color: rgba(51, 51, 51, 0.6);
+  opacity: 0.5;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
 }
 
 .branding {
@@ -610,6 +626,7 @@ footer .textContainer:nth-of-type(3) {
   background-image: url(../assets/home-4.jpeg);
   background-size: cover;
   background-position: bottom;
+  position: relative;
 }
 
 .features ul {
@@ -660,6 +677,10 @@ div.circle {
   content: '';
   height: 0;
   width: 0;
+}
+
+.features div.line {
+  height: 60px;
 }
 
 .team h2 {
@@ -884,11 +905,25 @@ h3.heading {
 }
 
 .comments .textContainer {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  margin-left: 23px;
   padding: 20px;
   background: #F6F6F6;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.comments .textContainer::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 22px solid #F6F6F6;
+  border-bottom: 8px solid transparent;
 }
 
 .comments span {
@@ -939,6 +974,13 @@ textarea {
   padding: 10px;
   border: none;
   border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: rgba(51, 51, 51, 0.6);
+  opacity: 0.7;
 }
 
 input::-webkit-input-placeholder,
@@ -1110,7 +1152,18 @@ header .container {
   margin-bottom: 100px;
 }
 
+@media (min-width: 1200px) {
+  .comments .textContainer {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1050px) {
+  header li {
+    padding: 15px 10px;
+  }
   .features ul {
     width: 60%;
   }
@@ -1327,6 +1380,10 @@ header .container {
   form input:nth-of-type(2) {
     margin-left: 0;
   }
+  .comments .textContainer {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1382,5 +1439,8 @@ header .container {
   }
   article .blogInfo .right .textContainer {
     margin-left: 0;
+  }
+  h3.heading {
+    line-height: 30px;
   }
 }

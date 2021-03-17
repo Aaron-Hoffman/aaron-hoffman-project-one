@@ -5,8 +5,18 @@
     background-image: url(../assets/home-1.jpeg);
     background-size: cover;
     background-position: bottom;
+    position: relative;
 }
 
+div.line {
+    width: 1px;
+    height: 120px; 
+    background-color: $lightBlack;
+    opacity: 0.5;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+}
 //  Branding Section 
 
 .branding {
@@ -81,6 +91,7 @@
     background-image: url(../assets/home-4.jpeg);
     background-size: cover;
     background-position: bottom;
+    position: relative;
 }
 
 .features ul {
@@ -117,6 +128,10 @@ div.circle {
     content: '';
     height: 0;
     width: 0;
+}
+
+.features div.line {
+    height: 60px; 
 }
 
 // Team section styles 

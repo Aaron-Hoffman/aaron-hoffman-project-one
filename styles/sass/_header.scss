@@ -4,6 +4,7 @@ h1 {
 
 i.fa-bars {
     display: none;
+    cursor: pointer;
 }
 
 header a {
@@ -40,6 +41,8 @@ header .container {
     display: block;
     text-align: center;
     @include pText;
+    color: $black;
+    opacity: 1;
     line-height: normal;
     position: relative;
     left: 10px;
