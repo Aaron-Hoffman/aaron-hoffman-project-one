@@ -91,9 +91,21 @@
 @media(max-width: 768px) {
     //  Header 
     header nav {
-        display: none;
+        position: absolute;
+        top: -300px;
+        transition: top 1s;
+        ul {
+            flex-direction: column;
+        }
     }
 
+    nav.onLeft {
+        top: 200px;
+    }
+
+    nav.onRight {
+        top: 370px;
+    }
     i.fa-bars {
         display: block;
         font-size: 1.7rem;

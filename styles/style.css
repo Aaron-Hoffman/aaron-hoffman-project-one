@@ -1238,7 +1238,22 @@ header .container {
 
 @media (max-width: 768px) {
   header nav {
-    display: none;
+    position: absolute;
+    top: -300px;
+    -webkit-transition: top 1s;
+    transition: top 1s;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav.onLeft {
+    top: 200px;
+  }
+  nav.onRight {
+    top: 370px;
   }
   i.fa-bars {
     display: block;
