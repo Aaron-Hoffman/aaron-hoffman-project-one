@@ -1253,7 +1253,15 @@ header .container {
     top: 200px;
   }
   nav.onRight {
-    top: 370px;
+    top: 360px;
+  }
+  .contactPage nav ul {
+    background-color: white;
+    border-radius: 10px;
+  }
+  p.first {
+    position: relative;
+    z-index: -10;
   }
   i.fa-bars {
     display: block;

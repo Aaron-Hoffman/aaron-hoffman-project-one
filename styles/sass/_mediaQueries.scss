@@ -90,6 +90,7 @@
 
 @media(max-width: 768px) {
     //  Header 
+    //  Css for mobile nav starts
     header nav {
         position: absolute;
         top: -300px;
@@ -104,13 +105,27 @@
     }
 
     nav.onRight {
-        top: 370px;
+        top: 360px;
     }
+
+    .contactPage nav ul {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    p.first {
+        position: relative;
+        z-index: -10;
+    }
+
+
     i.fa-bars {
         display: block;
         font-size: 1.7rem;
     }
 
+    //  Css for mobile nav ends 
+    
     header .container {
         flex-direction: row;
         padding-top: 100px;
