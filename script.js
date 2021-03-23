@@ -1,6 +1,7 @@
 // Create functioning mobile navigation
+//  CSS for this starts on line 94 of _mediaQueries partial
 
-// Grab the html elements I will need 
+// Grab the html elements needed
 const mobileNav = document.querySelector('#mobileNav');
 const leftContent = document.querySelector('.left');
 const rightContent = document.querySelector('.right');
@@ -15,7 +16,64 @@ mobileNav.addEventListener('click' , function() {
 
 //  Create functionality for comment section
 
-//  Grab elements I will need
+//  Helper function to build html elements
+function makeElement(tagName, className='', textContent='') {
+    //  Create the element
+    const element = document.createElement(tagName);
+    //  If a class name is given add to the element
+    if (className) {
+        element.classList.add(className);
+    }
+    // If text is given add to the element
+    if (textContent) {
+        const text = document.createTextNode(textContent);
+        element.appendChild(text);
+    }
+    return element;
+}
+
+//  Helper function to get current date and format as in the comment section 
+function getDate() {
+    // Get current date
+    const date = new Date();
+    // Process to get date in the format the comment section uses
+    const datePieces = date.toDateString().split(' ');
+    datePieces.shift();
+    const year = datePieces.pop();
+    const month = datePieces.join(' ');
+    return `${month},${year}`
+}
+
+// Function to build out the comment HTML 
+function createComment(postName, postComment, date) {
+    //  Overall container for the comment
+    const commentElement = makeElement('div', 'container');
+
+    //  Image 
+    const imgContainer = makeElement('div', 'imgContainer');
+    imgContainer.innerHTML = `<img src="./assets/user.png" alt="blank profile picture">`;
+
+    // Text content
+    const textContainer = makeElement('div', 'textContainer');
+    // Build elements
+    const h4 = makeElement('h4', '', `${postName} `);
+    const span = makeElement('span', '', '- Reply');
+    h4.appendChild(span);
+    const commentP = makeElement('p', '', `${postComment}`);
+    const commentDate = makeElement('p', 'date', `${date} at 0 hours ago`)
+    // Add to textContainer
+    textContainer.appendChild(h4);
+    textContainer.appendChild(commentP);
+    textContainer.appendChild(commentDate);
+
+    //  Add text and image to container
+    commentElement.appendChild(imgContainer);
+    commentElement.appendChild(textContainer);
+
+    return commentElement;
+}
+
+//  Grab elements needed
 const form = document.querySelector('#blogForm');
 const name = document.querySelector('#name');
 const comment = document.querySelector('#comment');
@@ -27,42 +85,15 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     
     //  Grab form values to be used 
-    let postName = name.value;
-    let postComment = comment.value;
+    const postName = name.value;
+    const postComment = comment.value;
 
     //  Get current date
-    let date = new Date();
-    let datePieces = date.toDateString().split(' ');
-    datePieces.shift();
-    let year = datePieces.pop();
-    let month = datePieces.join(' ');
+    const date = getDate();
     
-
-
     //  Assemble element to add to the dom
-    let htmlToAppend = `<div class="container">
-    <div class="imgContainer">
-        <img src="./assets/user.png" alt="Headshot of the commenter">
-    </div>
-    <div class="textContainer">
-        <h4>${postName} <span>- Reply</span></h4>
-        <p>${postComment}</p>
-        <p class="date">${month},${year} at 0 hours ago</p>
-    </div>
-    </div>`;
+    const commentElement = createComment(postName, postComment, date);
 
-    //  Add to the page
-    commentSection.insertAdjacentHTML("beforeend", htmlToAppend);
+    // Add to page
+    commentSection.appendChild(commentElement);
 })
-
-
-// {/* <div class="container">
-//     <div class="imgContainer">
-//          <img src="./assets/blog-6.jpeg" alt="Headshot of the commenter">
-//     </div>
-//     <div class="textContainer">
-//         <h4>Daniel Vandaft <span>- Reply</span></h4>
-//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, fuga. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-//         <p class="date">Jul 17,2015 at 15 hours ago</p>
-//     </div>
-// </div> */}
